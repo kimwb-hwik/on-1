@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/front.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <h1>
+          <button type="button">로고</button>
+        </h1>
+        <button type="button" class="menu" onclick="openNav()">빠른메뉴</button>
+
+        <div class="search-wrap">
+          <input type="search" placeholder="" />
+          <button type="button" class="ic search">검색</button>
+        </div>
+      </header>
+
+      <div class="nav-wrap">
+        <nav>
+          <button type="button">뉴스</button>
+          <button type="button">포토</button>
+          <button type="button">펜팔</button>
+          <button type="button" class="on">TV</button>
+          <button type="button">광장</button>
+          <button type="button">쇼핑</button>
+          <button type="button">행사</button>
+        </nav>
+      </div>
+      <!--//nav-wrap-->
+
+      <section class="">
+        <div class="photo-detail-view vedio">
+          <div class="photo">
+            <div class="vedio">
+              <iframe
+                width="100%"
+                height="250px"
+                src="https://www.youtube.com/embed/ZUxC8DhHg6w"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="title">
+            <div class="newslogo ml10">
+              <img
+                src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/005.png"
+                height="20"
+                alt="국민일보"
+              />
+            </div>
+            <div class="tit">
+              공공기관장 연봉 장관 웃돌아 작년 평균 1억8000만원공공기관장 연봉
+              장관 웃돌아 작년 평균 1억8000만원
+            </div>
+
+            <div class="etc-cont flex-justify">
+              <div>1.0236 회 <em>|</em> 2022-05.20</div>
+              <div>
+                <button type="button" class="share">공유 <i></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="photo-list">
+          <h2 class="title ml10 mt20">추천영상</h2>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="photo-list typeB">
+          <h2 class="title ml10 mt20">인기영상</h2>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길
+                    논란우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </div>
+                  <div class="name">지식광장</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="more">
+            <button type="button">더보기</button>
+          </div>
+        </div>
+      </section>
+      <!--//main-wrap-->
+
+      <section class="comment-wrap">
+        <div class="comment-tit">
+          <b>댓글 <span>5</span></b>
+        </div>
+        <div class="comment-input">
+          <input type="text" />
+          <select>
+            <option>최신순</option>
+            <option>인기순</option>
+          </select>
+        </div>
+        <div class="comment-cont">
+          <div class="nikname">
+            <div>닉네임 <em>22.05.29</em></div>
+            <div><i class="declaration">신고</i></div>
+          </div>
+          <div class="txt">댓글 내용들어갑니다.</div>
+          <div class="etc">
+            <button type="button">댓글작성</button>
+            <div>
+              <i class="like">2</i>
+              <i class="bed">2</i>
+            </div>
+          </div>
+        </div>
+        <div class="comment-cont">
+          <div class="nikname">
+            <div>닉네임 <em>22.05.29</em></div>
+            <div><i class="declaration">신고</i></div>
+          </div>
+          <div class="txt">댓글 내용들어갑니다.</div>
+          <div class="etc">
+            <button type="button">댓글작성</button>
+            <div>
+              <i class="like">2</i>
+              <i class="bed">2</i>
+            </div>
+          </div>
+        </div>
+        <div class="comment-cont">
+          <div class="nikname">
+            <div>닉네임 <em>22.05.29</em></div>
+            <div><i class="declaration">신고</i></div>
+          </div>
+          <div class="txt">댓글 내용들어갑니다.</div>
+          <div class="etc">
+            <button type="button">댓글작성</button>
+            <div>
+              <i class="like">2</i>
+              <i class="bed">2</i>
+            </div>
+          </div>
+        </div>
+        <div class="more">
+          <button type="button">댓글 더보기</button>
+        </div>
+      </section>
+
+      <section class="banner-wrap">
+        <a href="#non"><img src="../images/banner.jpg" alt="" /></a>
+      </section>
+      <!--//banner-wrap-->
+    </div>
+    <!--//wrap-->
+    <footer>
+      <button type="button" class="home on"><i></i>홈</button>
+      <button type="button" class="pay"><i></i>회비</button>
+      <button type="button" class="talk"><i></i>광화문톡</button>
+      <button type="button" class="mall"><i></i>광화문몰</button>
+      <button type="button" class="mypage"><i></i>내정보</button>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 10,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+          //hide: true,
+          //clickable: true,
+        },
+      });
+      var swiper = new Swiper(".mySwiper1", {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+          //hide: true,
+          //clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/front.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <h1>
+          <button type="button">로고</button>
+        </h1>
+        <button type="button" class="menu" onclick="openNav()">빠른메뉴</button>
+
+        <div class="search-wrap">
+          <input type="search" placeholder="" />
+          <button type="button" class="ic search">검색</button>
+        </div>
+      </header>
+      <style>
+        .navcontent,
+        .tabcontent {
+          display: none;
+        }
+      </style>
+
+      <div class="nav-wrap">
+        <nav>
+          <button type="button" onclick="navlink(event, 'news')">뉴스</button>
+          <button type="button" onclick="navlink(event, 'photo')">포토</button>
+          <button type="button" onclick="navlink(event, 'penpal')">펜팔</button>
+          <button type="button" onclick="navlink(event, 'tv')">TV</button>
+          <button type="button" onclick="navlink(event, 'plaza')">광장</button>
+          <button type="button" onclick="navlink(event, 'shopping')">
+            쇼핑
+          </button>
+          <button type="button" onclick="navlink(event, 'event')">행사</button>
+        </nav>
+      </div>
+      <!--//nav-wrap-->
+      <main>
+        <section class="main-wrap">
+          <div id="news" class="navcontent" style="display: block">
+            뉴스
+            <div class="tab-list">
+              <button type="button" class="tablinks">종합</button>
+              <button type="button" class="tablinks">뉴스명1</button>
+              <button type="button" class="tablinks">뉴스명2</button>
+            </div>
+
+            <div class="tabcontent" id="news1" style="display: block">
+              <ul>
+                <li>
+                  <a href="#none"
+                    >코로나19 확진 13,358명…총 18,188,200명 (6.8 기준)</a
+                  >
+                </li>
+                <li>
+                  <a href="#none"
+                    >"4인 제주 항공권 백만원" 천정부지 항공권 늘어나는
+                    '여행포기족'</a
+                  >
+                </li>
+                <li>
+                  <a href="#none"
+                    >"4인 제주 항공권 백만원" 천정부지 항공권 늘어나는
+                    '여행포기족'</a
+                  >
+                </li>
+                <li>
+                  <a href="#none"
+                    >"4인 제주 항공권 백만원" 천정부지 항공권 늘어나는
+                    '여행포기족'</a
+                  >
+                </li>
+                <li>
+                  <a href="#none"
+                    >"4인 제주 항공권 백만원" 천정부지 항공권 늘어나는
+                    '여행포기족'</a
+                  >
+                </li>
+                <li>
+                  <a href="#none"
+                    >"4인 제주 항공권 백만원" 천정부지 항공권 늘어나는
+                    '여행포기족'</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="photo" class="navcontent">photo</div>
+          <div id="penpal" class="navcontent">penpal</div>
+          <div id="tv" class="navcontent">tv</div>
+          <div id="plaza" class="navcontent">plaza</div>
+          <div id="shopping" class="navcontent">shopping</div>
+          <div id="event" class="navcontent">event</div>
+        </section>
+        <!--//main-wrap-->
+        <section class="weather-wrap">
+          <div><span>서울</span> <i></i> <span>21° 구름많음</span></div>
+          <div><span>미세먼지</span> <span>보통</span> <i></i></div>
+        </section>
+        <!--//weather-wrap-->
+
+        <section class="banner-wrap">
+          <a href="#non"><img src="../images/banner.jpg" alt="" /></a>
+        </section>
+        <!--//banner-wrap-->
+
+        <section class="fnlnews-wrap">
+          <h3 class="title">FNL NEWS</h3>
+          <button type="button" class="more">전체보기</button>
+
+          <style>
+            html,
+            body {
+              position: relative;
+              height: 100%;
+            }
+
+            body {
+              background: #eee;
+              font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+              font-size: 14px;
+              color: #000;
+              margin: 0;
+              padding: 0;
+            }
+
+            .swiper {
+              width: 100%;
+              height: 500px;
+            }
+
+            .swiper-slide {
+              text-align: center;
+              font-size: 18px;
+              background: #fff;
+
+              /* Center slide text vertically */
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              -webkit-align-items: center;
+              align-items: center;
+            }
+
+            .swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          </style>
+
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    유엔 진실·정의 특별보고관 만난 이용수 할머니유엔 진실·정의
+                    특별보고관 만난 이용수 할머니
+                  </div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    유엔 진실·정의 특별보고관 만난 이용수 할머니유엔 진실·정의
+                    특별보고관 만난 이용수 할머니
+                  </div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    유엔 진실·정의 특별보고관 만난 이용수 할머니유엔 진실·정의
+                    특별보고관 만난 이용수 할머니
+                  </div>
+                </button>
+              </div>
+              <div class="swiper-slide">
+                <button type="button">
+                  <div class="photo">
+                    <img
+                      src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="txt">
+                    유엔 진실·정의 특별보고관 만난 이용수 할머니유엔 진실·정의
+                    특별보고관 만난 이용수 할머니
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+        <!--//fnlnews-wrap-->
+
+        <section class="article-wrap">
+          <h3 class="title">추천기사</h3>
+          <button type="button" class="more">전체보기</button>
+          <ul>
+            <li>
+              <button type="button">
+                <div class="photo">
+                  <img
+                    src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                    alt=""
+                  />
+                </div>
+                <div class="txt">
+                  <b class="tit">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </b>
+                  <span class="date">2022.05.10</span>
+                </div>
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <div class="photo">
+                  <img
+                    src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                    alt=""
+                  />
+                </div>
+                <div class="txt">
+                  <b class="tit">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </b>
+                  <span class="date">2022.05.10</span>
+                </div>
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <div class="photo">
+                  <img
+                    src="https://m2.nateimg.co.kr/news/artc/1654739784_596.png"
+                    alt=""
+                  />
+                </div>
+                <div class="txt">
+                  <b class="tit">
+                    우산으로 얼굴 가린 김주현 금융위원장 후보자 출근길 논란
+                  </b>
+                  <span class="date">2022.05.10</span>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </section>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            // mousewheel: {
+            //   invert: true,
+            // },
+
+            //effect: "fade",
+            // fadeEffect: {
+            //   crossFade: true,
+            // },
+
+            // autoplay: {
+            //   delay: 3000,
+            // },
+
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "progressbar",
+              //hide: true,
+              //clickable: true,
+            },
+            // navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
+            // },
+          });
+        </script>
+      </main>
+
+      <footer>
+        <button type="button" class="home on"><i></i>홈</button>
+        <button type="button" class="pay"><i></i>회비</button>
+        <button type="button" class="talk"><i></i>광화문톡</button>
+        <button type="button" class="mall"><i></i>광화문몰</button>
+        <button type="button" class="mypage"><i></i>내정보</button>
+      </footer>
+
+      <script>
+        function navlink(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("navcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("navlinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(
+              " active",
+              ""
+            );
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>
+    </div>
+  </body>
+</html>
