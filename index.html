@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=1, target-densitydpi=medium-dpi"
+    />
+    <title>광화문 ON 사이트맵</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <style type="text/css">
+      body,
+      html,
+      td,
+      h1,
+      th {
+        font-family: "Nanum Gothic", "맑은 고딕", "돋움", Dotum, AppleGothic,
+          Helvetica, sans-serif;
+        background: #fff;
+        color: #666;
+      }
+
+      h1 {
+        width: 100%;
+        height: 22px;
+        line-height: 22px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      table {
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background: #eee;
+      }
+
+      th,
+      td {
+        padding: 5px 5px;
+        border-top: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        font-size: 12px;
+        background: #fff;
+        text-align: center;
+      }
+
+      td a {
+        text-decoration: underline;
+        color: blue;
+        display: block;
+      }
+
+      td a:hover {
+        text-decoration: underline;
+        color: red;
+        display: block;
+      }
+
+      /*ㅇㄹㅇ*/
+      td:nth-child(3) {
+        text-align: center;
+      }
+
+      td:nth-child(6) {
+        text-align: left;
+      }
+
+      td {
+        position: relative;
+      }
+      .r:after,
+      .ok:after {
+        background: red;
+        font-weight: 700;
+        color: #085e77;
+
+        text-align: center;
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+        position: absolute;
+        /*left:0; top:30%;
+		border:1px solid red;*/
+      }
+
+      .b:after,
+      .ing:after {
+        background: #0788da;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+        /*position:absolute;
+		left:0; top:30%;*/
+      }
+
+      td.r:after,
+      td.ok:after {
+        background: red;
+        font-weight: 700;
+        color: #085e77;
+
+        text-align: center;
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 3px;
+      }
+
+      td.b:after,
+      td.ing:after {
+        background: #0788da;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        content: "";
+        display: inline-block;
+        width: 12px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 3px;
+      }
+
+      /*tab-control*/
+      .tab-control .tabs {
+        padding-left: 0;
+        list-style: none;
+        margin: 0 !important;
+        z-index: 2;
+      }
+
+      .tab-control .tabs li ul,
+      .tab-control .tabs li ol {
+        list-style: none;
+        padding-left: 25px;
+      }
+
+      .tab-control .tabs:before,
+      .tab-control .tabs:after {
+        display: table;
+        content: "";
+      }
+
+      .tab-control .tabs:after {
+        clear: both;
+      }
+
+      .tab-control .tabs > li {
+        background-color: #ffffff;
+        display: block;
+        float: left;
+        margin-left: 5px;
+        position: relative;
+      }
+
+      .tab-control .tabs > li > a {
+        border: 1px #eeeeee solid;
+        display: block;
+        float: left;
+        padding: 5px 10px;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        color: inherit;
+        background-color: #eeeeee;
+      }
+
+      .tab-control .tabs > li.active a {
+        border-bottom-color: #ffffff;
+        background-color: #ffffff;
+        border-top: 2px #e51400 solid;
+      }
+
+      .tab-control .tabs > li.active:hover a {
+        background-color: #ffffff;
+        color: #1d1d1d;
+      }
+
+      .tab-control .tabs > li:hover a {
+        background-color: #d5d5d5;
+        color: #ffffff;
+      }
+
+      .tab-control .tabs > li.place-right {
+        float: right;
+        margin-right: 5px;
+        margin-left: auto;
+      }
+
+      .tab-control .tabs.no-spaces > li {
+        margin-left: 0;
+      }
+
+      .tab-control .frames {
+        z-index: 1;
+        border: 1px #eeeeee solid;
+        margin-top: -1px;
+      }
+
+      .tab-control .frames .frame {
+        display: none;
+      }
+
+      .tab-control .frames .frame:first-child {
+        display: block;
+      }
+
+      .tab-control .frame {
+        padding: 20px;
+      }
+
+      a:visited {
+        color: red;
+      }
+
+      @media (max-width: 1016px) {
+        .hidden-phone {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <h1>광화문 ON</h1>
+      완료
+      <span
+        class="ok r"
+        style="width: 10px; height: 15px; display: inline-block"
+      ></span
+      ><br />
+      진행중
+      <span
+        class="ing b"
+        style="width: 10px; height: 15px; display: inline-block"
+      ></span
+      ><br />
+
+      <div class="frame" id="page_1">
+        <table
+          cellpadding="0"
+          cellspacing="0"
+          width="90%"
+          style="margin: 0 auto"
+        >
+          <colgroup>
+            <col style="width: 8%" />
+            <col style="width: 10%" />
+            <col style="" />
+            <col style="" />
+            <col style="width: 20%" />
+            <col style="" />
+            <col style="width: 10%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>분류</th>
+              <th>메뉴명</th>
+              <th>2depth</th>
+              <th>3depth</th>
+              <th>화면ID</th>
+              <th>File Name/링크</th>
+              <th>완료일/상태</th>
+            </tr>
+          </thead>
+          <!---->
+          <tbody>
+            <tr>
+              <td>MO</td>
+              <td>뉴스</td>
+              <td>종합</td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/main.html">main.html</a></td>
+              <td class="r"></td>
+            </tr>
+            <tr>
+              <td>MO</td>
+              <td>뉴스</td>
+              <td>카테고리 별</td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/newsList.html">newsList.html</a></td>
+              <td class="r"></td>
+            </tr>
+            <tr>
+              <td>MO</td>
+              <td>뉴스</td>
+              <td>상세보기</td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/newsView.html">newsView.html</a></td>
+              <td class="r"></td>
+            </tr>
+            <tr>
+              <td>MO</td>
+              <td>포토</td>
+              <td>광장사진</td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/photoList.html">photoList.html</a></td>
+              <td class="r"></td>
+            </tr>
+            <tr>
+              <td>MO</td>
+              <td>포토</td>
+              <td>광장사진</td>
+              <td>상세</td>
+              <td></td>
+              <td><a href="./html/photoView.html">photoView.html</a></td>
+              <td class="r"></td>
+            </tr>
+            <tr>
+              <td>MO</td>
+              <td>펜팔</td>
+              <td>메인</td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/penpalList.html">penpalList.html</a></td>
+              <td class="r"></td>
+            </tr>
+            <tr>
+              <td>MO</td>
+              <td>펜팔</td>
+              <td>펜팔스토리</td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/penpalStory.html">penpalStory.html</a></td>
+              <td class="r"></td>
+            </tr>
+
+            <tr>
+              <td>MO</td>
+              <td>TV</td>
+              <td>리스트</td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/tvList.html">tvList.html</a></td>
+              <td class="r"></td>
+            </tr>
+            <tr>
+              <td>MO</td>
+              <td>TV</td>
+              <td>상세</td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/tvView.html">tvView.html</a></td>
+              <td class="r"></td>
+            </tr>
+
+            <tr>
+              <td>MO</td>
+              <td>광장</td>
+              <td>리스트</td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/aroundList.html">aroundList.html</a></td>
+              <td class="r"></td>
+            </tr>
+
+            <tr>
+              <td>MO</td>
+              <td>행사</td>
+              <td>리스트</td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/eventList.html">eventList.html</a></td>
+              <td class="r"></td>
+            </tr>
+            <tr>
+              <td>MO</td>
+              <td>행사</td>
+              <td>상세</td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/eventView.html">eventView.html</a></td>
+              <td class="r"></td>
+            </tr>
+
+            <tr>
+              <td>MO</td>
+              <td>내정보</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/mypage.html">mypage.html</a></td>
+              <td class="r"></td>
+            </tr>
+            <tr>
+              <td>MO</td>
+              <td>로그인</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><a href="./html/login.html">login.html</a></td>
+              <td class="r"></td>
+            </tr>
+
+            <tr>
+              <td colspan="7"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- //공통 -->
+    </div>
+  </body>
+</html>
